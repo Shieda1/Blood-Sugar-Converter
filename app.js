@@ -21,7 +21,7 @@ convertedRadio.addEventListener('click', function() {
 });
 
 glucoselevelRadio.addEventListener('click', function() {
-  variable.textContent = 'Converted';
+  variable.textContent = 'Blood sugar';
   converted = v;
   result.textContent = '';
 });
@@ -29,7 +29,7 @@ glucoselevelRadio.addEventListener('click', function() {
 btn.addEventListener('click', function() {
   
   if(convertedRadio.checked)
-    result.textContent = `Converted = ${computeconverted().toFixed(5)}`;
+    result.textContent = `Blood sugar = ${computeconverted().toFixed(5)}`;
 
   else if(glucoselevelRadio.checked)
     result.textContent = `Glucose level = ${computeglucoselevel().toFixed(5)}`;
